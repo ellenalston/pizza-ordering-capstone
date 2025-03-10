@@ -74,13 +74,4 @@ public class PizzaController {
         return pizzaDao.getPizzasByOrderId(orderId);
     }
 
-
-
-
-
-
-
-
-
-
 }

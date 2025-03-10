@@ -68,7 +68,7 @@
 <script>
 import PizzaService from '../services/PizzaService';
 export default {
-  data() {
+  data() { // data() is a function that returns an object
     return {
       // This is the object that will be sent to the server to create a new pizza
       newPizza: {
@@ -93,7 +93,7 @@ export default {
     }
 
   },
-  created() {
+  created() { // created() is a lifecycle hook that is called when the component is created
     // Call the getCrusts method from the PizzaService
     PizzaService.getCrusts().then(
       (response) => {
